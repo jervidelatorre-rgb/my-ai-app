@@ -4,21 +4,21 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { GamePhase, GameSettings, Player, RoundState, BibleWordPair } from './types/game';
-import { INITIAL_BIBLE_WORD_PAIRS } from './data/bibleWordPairs';
-import { generateRoundRoles, checkVictoryCondition, updatePlayerScores, PLAYER_COLORS, SUGGESTED_NAMES } from './utils/gameLogic';
-import { sounds } from './utils/audio';
+import { GamePhase, GameSettings, Player, RoundState, BibleWordPair } from './game';
+import { INITIAL_BIBLE_WORD_PAIRS } from './bibleWordPairs';
+import { generateRoundRoles, checkVictoryCondition, updatePlayerScores, PLAYER_COLORS, SUGGESTED_NAMES } from './gameLogic';
+import { sounds } from './audio';
 
-import { Header } from './components/Header';
-import { PlayerSetup } from './components/PlayerSetup';
-import { PassAndPlay } from './components/PassAndPlay';
-import { DiscussionPhase } from './components/DiscussionPhase';
-import { VotingPhase } from './components/VotingPhase';
-import { EliminationRevealModal } from './components/EliminationRevealModal';
-import { RoundOver } from './components/RoundOver';
-import { LeaderboardModal } from './components/LeaderboardModal';
-import { HowToPlayModal } from './components/HowToPlayModal';
-import { CustomWordPairsModal } from './components/CustomWordPairsModal';
+import { Header } from './Header';
+import { PlayerSetup } from './PlayerSetup';
+import { PassAndPlay } from './PassAndPlay';
+import { DiscussionPhase } from './DiscussionPhase';
+import { VotingPhase } from './VotingPhase';
+import { EliminationRevealModal } from './EliminationRevealModal';
+import { RoundOver } from './RoundOver';
+import { LeaderboardModal } from './LeaderboardModal';
+import { HowToPlayModal } from './HowToPlayModal';
+import { CustomWordPairsModal } from './CustomWordPairsModal';
 
 const DEFAULT_PLAYERS: Player[] = SUGGESTED_NAMES.slice(0, 5).map((name, idx) => ({
   id: 'p_init_' + idx,
