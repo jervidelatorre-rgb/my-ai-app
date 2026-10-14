@@ -1,0 +1,6 @@
+{
+  "name": "Do You Know Me? - Church Social Deduction Game",
+  "description": "A lively Bible social deduction party game inspired by Undercover for 3 to 15 players. Discern between the faithful Sheep and the elusive Black Sheep!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
